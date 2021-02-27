@@ -83,3 +83,16 @@
   font-weight: 300;
   font-style: italic;
 }
+
+[data-scroll] {
+  transition: transform 1000ms, opacity 1000ms;
+}
+[data-scroll="in"] {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+[data-scroll="out"] {
+  opacity: 0;
+  will-change: transform, scale, opacity;
+  transform: translateY(4rem) scale(0.93);
+}
