@@ -18,7 +18,10 @@ module.exports = {
       colors: {
         'light-blue': colors.lightBlue,
         cyan: colors.cyan,
-        'brand-blue': '#5d87a1',
+        'brand-blue': {
+          light: '#6d93ab',
+          DEFAULT: '#5d87a1',
+        },
       },
     },
   },
