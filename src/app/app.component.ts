@@ -14,7 +14,7 @@ export class AppComponent implements AfterContentInit, OnDestroy {
 
   ngAfterContentInit(): void {
     this.so = ScrollOut({
-      threshold: .25,
+      threshold: .2,
       once: true,
       scope: this.el.nativeElement
     });
