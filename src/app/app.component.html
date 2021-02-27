@@ -1,0 +1,170 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+</head>
+<body>
+  <div class="relative">
+    <div class="relative bg-white shadow">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+          <div class="flex justify-start lg:w-0 lg:flex-1">
+            <a href="#">
+              <span class="text-brand-blue font-bold text-2xl">OutSpoken</span>
+              <img class="w-52 hidden" src="https://www.outspokenvoices.com/assets/img/logo.png" alt="" />
+            </a>
+          </div>
+          <div class="-mr-2 -my-2 md:hidden">
+            <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-blue">
+              <span class="sr-only">Open menu</span>
+              <!-- Heroicon name: outline/menu -->
+              <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+          <nav class="hidden md:flex space-x-10">
+            <div class="relative">
+              <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+              <button type="button" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue">
+                <span>Voices</span>
+              </button>
+            </div>
+
+            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> Blog </a>
+            <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900"> FAQ </a>
+
+            <div class="relative">
+              <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+              <button type="button" class="group bg-white rounded-md text-gray-500 inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue">
+                <span>Contact</span>
+              </button>
+            </div>
+          </nav>
+          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+            <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a>
+            <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-blue hover:bg-brand-blue-700"> Sign up </a>
+          </div>
+        </div>
+      </div>
+
+      <!--
+        Mobile menu, show/hide based on mobile menu state.
+
+        Entering: "duration-200 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+      <div class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-brand-blue.svg" alt="Workflow" />
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-blue">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <nav class="grid gap-y-8">
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900"> Voices </span>
+                </a>
+
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900"> Blog </span>
+                </a>
+
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900"> FAQ </span>
+                </a>
+
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900"> Contact </span>
+                </a>
+              </nav>
+            </div>
+          </div>
+          <div class="py-6 px-5 space-y-6">
+            <div>
+              <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-brand-blue hover:bg-brand-blue-700"> Sign up </a>
+              <p class="mt-6 text-center text-base font-medium text-gray-500">
+                Existing customer?
+                <a href="#" class="text-brand-blue hover:text-brand-blue"> Sign in </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="relative">
+        <svg class="absolute left-0 right-0 -bottom-12 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 288">
+          <defs></defs>
+          <path fill-rule="evenodd" d="M0,1091 C92.6666667,1149.66667 202,1179 328,1179 C517,1179 563,1146 720,1091 C877,1036 959,987 1106,987 C1204,987 1315.33333,1021.66667 1440,1091 L1440,1275 L0,1275 L0,1091 Z" transform="translate(0 -987)"></path>
+        </svg>
+        <div class="mx-auto max-w-6xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
+          <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-8">
+            <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl">The perfect voice over.</h1>
+            <p class="font-light mt-3 max-w-md mx-auto text-lg text-gray-600 sm:text-xl md:mt-7 md:max-w-3xl">Book a professional voice over artist or post a project and receive high quality demos, fast.</p>
+            <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+              <div class="rounded-md shadow">
+                <a href="#" class="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-white bg-brand-blue hover:bg-brand-blue-700 md:py-3 md:text-base md:px-8"> Find a Voice </a>
+              </div>
+              <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-5">
+                <a href="#" class="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-brand-blue bg-white hover:bg-gray-50 md:py-3 md:text-base md:px-8"> Post a Project </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:left-1/2 lg:-ml-6 lg:right-0 lg:max-w-xl lg:h-full lg:mr-16">
+          <img class="absolute inset-0 w-full h-full object-contain" src="https://www.outspokenvoices.com/assets/img/pages/hp/voice-actor.jpg" alt="" />
+        </div>
+      </section>
+      <section class="relative bg-gray-50">
+        <div class="mx-auto max-w-6xl w-full p-8 pt-10">
+          <div class="flex justify-between -mr-1">
+            <h2 class="text-gray-400 text-sm font-semibold uppercase tracking-wide">Our Customers</h2>
+            <h2 class="text-gray-400 text-sm font-semibold uppercase tracking-wide flex items-center">
+              <span class="flex-shrink-0 whitespace-pre">Reviews on </span>
+              <a href="#" class="flex-shrink-0 text-green-600">TrustPilot</a>
+              <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+              </svg>
+            </h2>
+          </div>
+          <div class="mt-8 grid grid-cols-2 md:grid-cols-6 lg:grid-cols-5">
+            <div class="col-span-1 flex md:col-span-2 lg:col-span-1">
+              <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
+            </div>
+            <div class="col-span-1 flex md:col-span-2 lg:col-span-1">
+              <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
+            </div>
+            <div class="col-span-1 flex pl-3 md:col-span-2 lg:col-span-1">
+              <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit" />
+            </div>
+            <div class="col-span-1 flex pl-4 md:col-span-3 lg:col-span-1">
+              <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor" />
+            </div>
+            <div class="col-span-2 flex justify-end md:col-span-3 lg:col-span-1">
+              <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
