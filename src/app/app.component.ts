@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'OutSpoken';
+
+  scrolled = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    this.scrolled = window.scrollY > 0;
+  }
 }

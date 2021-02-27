@@ -1,7 +1,7 @@
 <div class="relative">
   <div class="z-10 fixed left-0 top-0 right-0 bg-white bg-opacity-95 shadow md:shadow-none">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <div class="h-16 md:h-20 flex justify-between items-center py-6 md:justify-start md:space-x-10">
+      <div [ngClass]="{ 'md:h-20': !scrolled }" class="transition-all duration-200 h-16 flex justify-between items-center py-6 md:justify-start md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="#">
             <span class="text-brand-blue-500 font-bold text-2xl">OutSpoken</span>
@@ -82,8 +82,8 @@
     </div>
   </div>
   <main>
-    <section class="relative min-h-screen pt-16 md:pt-20 bg-gray-50">
-      <div class="pt-6 relative bg-white">
+    <section class="relative min-h-screen -mt-8 pt-16 md:pt-20 bg-gray-50">
+      <div class="pt-12 relative bg-white">
         <svg class="pointer-events-none absolute left-0 right-0 -bottom-14 fill-current text-gray-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 288">
           <defs></defs>
           <path fill-rule="evenodd" d="M0,1091 C92.6666667,1149.66667 202,1179 328,1179 C517,1179 563,1146 720,1091 C877,1036 959,987 1106,987 C1204,987 1315.33333,1021.66667 1440,1091 L1440,1275 L0,1275 L0,1091 Z" transform="translate(0 -987)"></path>
