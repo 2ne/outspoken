@@ -10,6 +10,7 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'OutSpoken';
   loading = true;
   so: any;
+  menuHidden = true;
 
   constructor(private el: ElementRef) {}
 
