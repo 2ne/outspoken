@@ -8,18 +8,22 @@ import ScrollOut from 'scroll-out';
 })
 export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'OutSpoken';
-  loading = false;
+  loading = true;
   so: any;
 
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
-    this.loading = false;
     this.so = ScrollOut({
       threshold: .2,
       once: true,
       scope: this.el.nativeElement
     });
+
+    setTimeout(() => {
+      this.loading = false;
+      document.documentElement.classList.remove('preload');
+    }, 1000);
   }
 
   ngOnDestroy(): void {
