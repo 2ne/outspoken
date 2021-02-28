@@ -5,16 +5,6 @@
 
 @font-face {
   font-family: "Circular";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-mediumItalic.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-mediumItalic.eot?#iefix")
-  format("embedded-opentype"),
-  url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-mediumItalic.woff")
-  format("woff");
-  font-weight: 500;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-bold.eot");
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-bold.eot?#iefix")
   format("embedded-opentype"),
@@ -35,16 +25,6 @@
 }
 @font-face {
   font-family: "Circular";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-boldItalic.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-boldItalic.eot?#iefix")
-  format("embedded-opentype"),
-  url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-boldItalic.woff")
-  format("woff");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular";
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-book.eot");
   src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-book.eot?#iefix")
   format("embedded-opentype"),
@@ -62,26 +42,6 @@
   format("woff");
   font-weight: 500;
   font-style: normal;
-}
-@font-face {
-  font-family: "Circular";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-blackItalic.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-blackItalic.eot?#iefix")
-  format("embedded-opentype"),
-  url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-blackItalic.woff")
-  format("woff");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Circular";
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-bookItalic.eot");
-  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-bookItalic.eot?#iefix")
-  format("embedded-opentype"),
-  url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/59912/lineto-circular-bookItalic.woff")
-  format("woff");
-  font-weight: 300;
-  font-style: italic;
 }
 
 [data-scroll] {
