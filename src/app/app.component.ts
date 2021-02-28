@@ -9,13 +9,13 @@ import ScrollOut from 'scroll-out';
 export class AppComponent implements AfterViewInit, OnDestroy {
   title = 'OutSpoken';
   loading = true;
-  so: any;
+  scrollOut: any;
   menuHidden = true;
 
   constructor(private el: ElementRef) {}
 
   ngAfterViewInit(): void {
-    this.so = ScrollOut({
+    this.scrollOut = ScrollOut({
       threshold: .2,
       once: true,
       scope: this.el.nativeElement
@@ -28,6 +28,6 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.so.teardown();
+    this.scrollOut.teardown();
   }
 }
