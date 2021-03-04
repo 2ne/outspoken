@@ -11,6 +11,8 @@ export class AppComponent implements AfterViewInit, OnDestroy {
   loading = true;
   scrollOut: any;
   menuHidden = true;
+  videoHidden = true;
+  signupHidden = true;
 
   constructor(private el: ElementRef) {}
 

@@ -30,9 +30,47 @@
             </button>
           </div>
         </nav>
-        <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <div class="relative hidden md:flex items-center justify-end md:flex-1 lg:w-0">
           <a href="#" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"> Sign in </a>
-          <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-5 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white transition-colors bg-brand-blue-500 hover:bg-brand-blue-400"> Sign up </a>
+          <button (click)="signupHidden = !signupHidden" type="button" class="focus:outline-none ml-8 whitespace-nowrap inline-flex items-center justify-center px-5 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white transition-colors bg-brand-blue-500 hover:bg-brand-blue-400"> Sign up </button>
+
+          <div (click)="signupHidden = true" [ngClass]="signupHidden ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'" class="absolute z-10 top-10 right-0 mt-3 px-2 w-screen max-w-xs sm:px-0 transition transform origin-top-right">
+            <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+              <div class="relative grid gap-6 bg-white p-6">
+                <a href="#" class="-m-3 p-4 block rounded-md hover:bg-gray-50 group transition-colors">
+                  <p class="block text-base font-medium text-gray-900 -mt-1">
+                    Hire voice artist
+                  </p>
+                  <div class="flex items-center">
+                    <p class="flex-grow block mt-1.5 text-sm text-gray-500">
+                      Sign up to book a professional voice over artist.
+                    </p>
+                    <div class="ml-5 -mr-1">
+                      <svg class="h-5 w-5 text-gray-400 transition-all group-hover:text-brand-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+                <div class="border-t border-gray-200 -mb-3"></div>
+                <a href="#" class="-m-3 p-4 block rounded-md hover:bg-gray-50 group transition-colors">
+                  <p class="block text-base font-medium text-gray-900 -mt-1">
+                    Sign up as a voice artist
+                  </p>
+                  <div class="flex items-center">
+                    <p class="flex-grow block mt-1.5 text-sm text-gray-500">
+                      Get a free account today for access to casting listings.
+                    </p>
+                    <div class="ml-5 -mr-1">
+                      <svg class="h-5 w-5 text-gray-400 transition-all group-hover:text-brand-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -71,11 +109,56 @@
         </div>
         <div class="py-6 px-5 space-y-6">
           <div>
-            <a href="#" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-brand-blue-500 hover:bg-brand-blue-400"> Sign up </a>
+            <button type="button" (click)="signupHidden = !signupHidden" class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-full shadow-sm text-base font-medium text-white bg-brand-blue-500 hover:bg-brand-blue-400"> Sign up </button>
             <p class="mt-6 text-center text-base font-medium text-gray-500">
               Existing customer?
               <a href="#" class="text-brand-blue-500 hover:text-brand-blue"> Sign in </a>
             </p>
+
+            <div (click)="signupHidden = true" [ngClass]="signupHidden ? 'opacity-0 scale-95 pointer-events-none' : 'opacity-100 scale-100'" class="fixed z-10 top-0 left-0 right-0 bottom-0 transition transform origin-top-right">
+              <div class="h-screen bg-white rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <button (click)="signupHidden = true" type="button" class="z-50 absolute top-3 right-3 bg-transparent rounded-full p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-brand-blue">
+                  <span class="sr-only">Close menu</span>
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+                <div class="relative grid gap-6 bg-white p-6">
+                  <div class="font-bold text-xl mb-3 text-brand-blue-500">Sign up</div>
+                  <a href="#" class="-m-3 p-4 block rounded-md hover:bg-gray-50 group">
+                    <p class="block text-base font-medium text-gray-900 -mt-1">
+                      Hire voice artist
+                    </p>
+                    <div class="flex items-center">
+                      <p class="flex-grow block mt-1.5 text-sm text-gray-500">
+                        Sign up to book a professional voice over artist.
+                      </p>
+                      <div class="ml-5 -mr-1">
+                        <svg class="h-6 w-6 text-gray-400 transition-all group-hover:text-brand-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                  <div class="border-t border-gray-200 -mb-3"></div>
+                  <a href="#" class="-m-3 p-4 block rounded-md hover:bg-gray-50 group">
+                    <p class="block text-base font-medium text-gray-900 -mt-1">
+                      Sign up as a voice artist
+                    </p>
+                    <div class="flex items-center">
+                      <p class="flex-grow block mt-1.5 text-sm text-gray-500">
+                        Get a free account today for access to casting listings.
+                      </p>
+                      <div class="ml-5 -mr-1">
+                        <svg class="h-6 w-6 text-gray-400 transition-all group-hover:text-brand-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +187,7 @@
         </div>
         <div class="relative lg:absolute lg:inset-y-0 lg:left-1/2 lg:-ml-6 lg:right-0 lg:max-w-2xl lg:h-full lg:px-0 lg:pl-6 lg:pr-7">
           <div class="relative flex flex-col justify-center h-full w-full px-4 sm:px-20 lg:px-0 mb-6">
-            <div class="cursor-pointer transform transform-gpu duration-300 transition-transform hover:scale-105">
+            <div (click)="videoHidden = false" class="cursor-pointer transform transform-gpu duration-300 transition-transform hover:scale-105">
               <img class="select-none block rounded-md shadow-lg border border-gray-100 border-b-0" src="https://assets.codepen.io/12596/how-it-works-no-shadow-1.png" alt="Hero image" />
             </div>
           </div>
@@ -116,7 +199,7 @@
             <h2 class="text-gray-400 text-sm font-semibold uppercase tracking-wide">Our Customers</h2>
             <h2 class="hidden sm:flex text-gray-400 text-sm font-semibold uppercase tracking-wide items-center">
               <span class="flex-shrink-0 whitespace-pre">Reviews on </span>
-              <a href="#" class="flex-shrink-0 text-green-600">TrustPilot</a>
+              <a href="https://uk.trustpilot.com/review/outspokenvoices.com" target="_blank" class="flex-shrink-0 text-green-600 hover:underline">TrustPilot</a>
               <svg class="h-5 w-5 text-green-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
               </svg>
@@ -219,7 +302,7 @@
                 when your recording is ready to be downloaded.</p>
             </div>
             <div>
-              <button type="submit" class="flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full text-brand-orange-500 transition-colors bg-white hover:bg-brand-orange-100 md:py-3 md:text-base md:px-8">
+              <button (click)="videoHidden = false" type="button" class="flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-full text-brand-orange-500 transition-colors bg-white hover:bg-brand-orange-100 md:py-3 md:text-base md:px-8">
                 <svg class="h-7 w-7 mr-2.5 -ml-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
                 </svg>
@@ -332,7 +415,7 @@
                     </div>
                   </li>
                   <li>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 flex items-center">
+                    <a href="mailto:info@outspokenvoices.com?subject=Contact Form - Outspoken" class="text-base text-gray-500 hover:text-gray-900 flex items-center">
                       <svg class="w-5 h-5 mr-3 text-brand-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                         <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -341,7 +424,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#" class="text-base text-gray-500 hover:text-gray-900 flex items-center">
+                    <a href="tel:+44-208-6387-409" class="text-base text-gray-500 hover:text-gray-900 flex items-center">
                       <svg class="w-5 h-5 mr-3 text-brand-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                       </svg>
@@ -361,4 +444,14 @@
       </div>
     </footer>
   </main>
+</div>
+
+<div *ngIf="!videoHidden" class="bg-black fixed inset-0 z-50 flex items-center justify-center">
+  <button (click)="videoHidden = true" type="button" class="z-50 fixed top-5 right-5 bg-transparent rounded-full p-2 inline-flex items-center justify-center transition-all text-gray-400 bg-black hover:bg-white hover:bg-opacity-10 hover:text-white focus:outline-none">
+    <span class="sr-only">Close video</span>
+    <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+  <video class="max-h-screen" controls autoplay><source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4"></video>
 </div>

@@ -58,12 +58,9 @@
 }
 
 .preload {
-  overflow: hidden;
+  @apply hidden;
 }
 
 .preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
+  @apply transition-none;
 }
